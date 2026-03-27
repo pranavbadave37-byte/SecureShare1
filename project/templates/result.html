@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+{% include "navbar.html" %}
+
+<h2>File Shared</h2>
+
+<p>{{ url }}</p>
+
+<div class="pin-container">
+{% for d in pin %}
+<div class="pin-box">{{ d }}</div>
+{% endfor %}
+</div>
+
+<img src="{{ qr }}" width="200">
+
+</body>
+</html>

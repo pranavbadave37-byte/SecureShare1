@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="logo">🔐 SecureShare</div>
+
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/upload">Upload</a>
+    <a href="/access">Access</a>
+  </div>
+
+  <div class="profile">
+    {% if session.get('user') %}
+      <span>{{ session['user'] }}</span>
+      <a href="/logout">Logout</a>
+    {% else %}
+      <a href="/login">Login</a>
+    {% endif %}
+  </div>
+</nav>

@@ -1,0 +1,209 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #2d5be3;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #2d5be3;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #2d5be3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Upload Box */
+.upload-box {
+  width: 500px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 2px dashed #dcdcdc;
+  border-radius: 15px;
+  text-align: center;
+  background: white;
+}
+
+.upload-box:hover {
+  border-color: #2d5be3;
+}
+
+/* Result Cards */
+.result-card {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PIN Boxes */
+.pin-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pin-box {
+  width: 60px;
+  height: 60px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 60px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+  margin-top: 10px;
+}
+
+.feature-card p {
+  color: #666;
+  margin-top: 5px;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+}
+
+.profile a {
+  margin-left: 10px;
+}
+
+/* Upload Box */
+.upload-box {
+  width: 500px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 2px dashed #4f6ef7;
+  border-radius: 15px;
+  text-align: center;
+  background: white;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: #f0f4ff;
+}
+
+/* Hidden input */
+input[type="file"] {
+  display: none;
+}
+
+/* Custom upload button */
+.custom-file {
+  padding: 12px 25px;
+  background: #6882d9;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  background: #2d5be3;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Auth Pages */
+.auth-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}

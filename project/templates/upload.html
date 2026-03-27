@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+{% include "navbar.html" %}
+
+<h2>Upload File</h2>
+
+<div class="upload-box">
+<form method="POST" enctype="multipart/form-data">
+
+<label class="custom-file">
+  Choose File
+  <input type="file" name="file">
+</label>
+
+<p id="filename">No file selected</p>
+
+<input type="number" name="expiry" value="24">
+
+<button class="btn">Upload</button>
+</form>
+</div>
+
+<script>
+document.querySelector("input[type=file]").onchange = function(){
+  document.getElementById("filename").innerText = this.files[0].name;
+}
+</script>
+
+</body>
+</html>

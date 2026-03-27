@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+{% include "navbar.html" %}
+
+<h2>Access File</h2>
+
+<form method="GET" action="/file/">
+  <input type="text" name="file_id" placeholder="Enter File ID">
+  <input type="text" name="pin" placeholder="Enter PIN">
+  <button class="btn">Download</button>
+</form>
+
+</body>
+</html>
